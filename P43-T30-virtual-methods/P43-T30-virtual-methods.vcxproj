@@ -128,11 +128,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Employee.cpp" />
+    <ClCompile Include="Manager.cpp" />
     <ClCompile Include="P43-T30-virtual-methods.cpp" />
     <ClCompile Include="Teacher.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Employee.h" />
+    <ClInclude Include="Manager.h" />
     <ClInclude Include="Teacher.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
