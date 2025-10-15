@@ -3,6 +3,7 @@
 #include "Manager.h"
 #include <vector>
 #include <algorithm>
+#include <typeinfo>
 
 int main()
 {
@@ -25,7 +26,19 @@ int main()
         //arr[i]->showInfo();
         cout << i + 1 << ". " << arr[i]->getName() << endl; 
     }
+    cout << "======================================\n\n";
+    //Вивести на екран лише менеджерів
+    cout << "List of managers: \n";
+    for (int i = 0; i < arr.size(); i++)
+    {
+        // cout << typeid(*arr[i]).name() << endl;
 
+        if (typeid(*arr[i]) == typeid(Manager)) {
+            arr[i]->showInfo();
+        }
+    }
+
+    cout << "======================================\n\n";
 
 }
 
